@@ -9,11 +9,13 @@ phases:
     build:
         commands:
             - echo Build started on `date`
-            - ./mvnw verify
+#            - ./mvnw verify
+            - mvn clean install
     post_build:
         commands:
             - echo Build completed on `date`
-            - ./mvnw -Pprod clean verify
+#            - ./mvnw -Pprod clean verify
+            - mvn package
 artifacts:
     files:
         - target/umsl-1.0-SNAPSHOT.jar
