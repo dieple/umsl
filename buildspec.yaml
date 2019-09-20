@@ -11,7 +11,7 @@ phases:
     post_build:
         commands:
             - echo Build completed on `date`
-            - ./mvnw package
+            - ./mvnw -Pprod clean verify
 artifacts:
     files:
         - target/umsl-1.0-SNAPSHOT.jar
