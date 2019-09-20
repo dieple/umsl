@@ -15,5 +15,5 @@ phases:
 artifacts:
     files:
         - target/umsl-1.0-SNAPSHOT.jar
-        - appspec.yml
+        - appspec.yaml
     discard-paths: yes
