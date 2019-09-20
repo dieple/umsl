@@ -19,3 +19,7 @@ artifacts:
         - target/umsl-1.0-SNAPSHOT.jar
         - appspec.yaml
     discard-paths: yes
+
+cache:
+    paths:
+    - '/root/.m2/**/*'
